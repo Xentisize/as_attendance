@@ -48,4 +48,5 @@ group :development, :test do
 
   gem 'guard-rails'
   gem 'guard-livereload'
+  gem 'annotate'
 end
