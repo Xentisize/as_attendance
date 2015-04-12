@@ -1,0 +1,20 @@
+div.page-header
+  h2 Passage Database
+a class="btn btn-primary pull-right" href="/questions/new" New Passage
+
+
+table class="table table-striped"
+  thead
+    tr
+      td Passage ID
+      td Passage Content
+      td Add Questions
+      td Delete Passage
+  tbody
+    - @passages.each do |passage|
+      tr
+        td passage.id
+        td
+          p = truncate(passage.content, length: 100)
+        td
+        td

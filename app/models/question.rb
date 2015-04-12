@@ -12,7 +12,7 @@
 
 class Question < ActiveRecord::Base
   belongs_to :passage
-  has_many :question_options
+  has_many :question_options, dependent: :destroy
 
   validates :content, presence: true
 end

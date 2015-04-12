@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'slim-rails'
 gem 'bootstrap-sass'
+gem 'simple_form'
 
 
 # Use ActiveModel has_secure_password
